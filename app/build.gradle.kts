@@ -66,4 +66,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("org.web3j:core:4.8.7") // Web3j for interacting with Ethereum
+    implementation("org.web3j:abi:4.8.7")  // ABI encoding/decoding
+    implementation("org.web3j:crypto:4.8.7") // Ethereum cryptographic functions
+    implementation("org.web3j:contracts:4.8.7") // Ethereum contract wrappers
 }
