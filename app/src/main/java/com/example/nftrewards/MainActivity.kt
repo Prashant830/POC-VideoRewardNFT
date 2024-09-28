@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
     private fun fetchAccountBalance(address: String) {
         CoroutineScope(Dispatchers.IO).launch {
             try {
-                Log.d("balance", "Starting balance call for address: $address")
+                Log.d("balance", "Starting balance call for address: $address\ncontract Address ${balanceChecker.contractAddress}" )
                 val balance = balanceChecker.getBalance(address).send()
                 Log.d("balance", "Fetched balance: ${balance.toString()}")
             } catch (e: Exception) {
